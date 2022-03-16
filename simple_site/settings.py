@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'telegram_bot.apps.TelegramBotConfig',
+    'price.apps.PriceConfig',
     'cms.apps.CmsConfig',
     'crm.apps.CrmConfig',
     'django.contrib.admin',
