@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'profiles.apps.ProfilesConfig',
+    'advertisement.apps.AdvertisementConfig',
     'telegram_bot.apps.TelegramBotConfig',
     'price.apps.PriceConfig',
     'cms.apps.CmsConfig',
@@ -51,7 +53,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'simple_site.middleware.filter_ip_middleware.FilterIPMiddleware',
+    # 'simple_site.middleware.filter_ip_middleware.FilterIPMiddleware',
+    # 'simple_site.middleware.logging_middleware.LoggingMiddleware',
 ]
 
 ROOT_URLCONF = 'simple_site.urls'
